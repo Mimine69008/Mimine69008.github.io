@@ -253,3 +253,68 @@ body {
 .card::before {
     pointer-events: none;
 }
+/* ------------------------------
+   RESPONSIVE MOBILE
+--------------------------------*/
+@media (max-width: 900px) {
+
+    .nav-inner {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        margin-right: 1rem;
+        display: inline-block;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    body {
+        padding-bottom: 2rem;
+    }
+}
