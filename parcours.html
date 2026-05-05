@@ -2,133 +2,113 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon Parcours | Mohamed-Amine EL ABED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Parcours | M-A. EL ABED</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-black">
+
     <nav class="nav">
-        <div class="nav-brand">SISR<span class="dot">.</span>EXPERT</div>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="parcours.html" class="active">Parcours</a>
-            <a href="projets.html">Projets</a>
-            <a href="veille.html">Veille</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+    <div class="nav-brand font-bold tracking-tighter">M-A<span class="text-blue-500">.</span>ELABED</div>
+    <div class="nav-links">
+        <a href="index.html">🏠 Accueil</a>
+        <a href="parcours.html">🚀 Parcours</a>
+        <a href="projets.html">📂 Projets</a>
+        <a href="veille.html">🔍 Veille</a>
+        <a href="contact.html">📞 Contact</a> 
+    </div>
+</nav>
 
-    <header class="page-header">
-        <div class="breadcrumb"><a href="index.html">Accueil</a> / Parcours</div>
-        <h1>Mon Parcours Professionnel</h1>
-        <p>Découvrez ma formation en informatique et les expériences qui forgent mes compétences en réseaux et cybersécurité.</p>
-    </header>
+    <div class="container">
+        <header class="py-10">
+            <span class="text-blue-500 font-mono">/ CURRICULUM VITAE</span>
+            <h1 class="font-bold">Mon Itinéraire</h1>
+            <p class="text-slate-400 max-w-2xl">Étudiant en BTS SIO (SISR), je me spécialise dans la gestion des infrastructures réseaux et la sécurisation des systèmes d'information.</p>
+        </header>
 
-    <main class="section">
-        <div class="grid md:grid-cols-2 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             
-            <!-- Section Études -->
+            <!-- FORMATION -->
             <section>
-                <div class="section-label">Éducation</div>
-                <h2 class="section-title text-2xl">Formation Académique</h2>
-                
+                <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="bg-blue-500 w-2 h-6 inline-block"></span> Formation
+                </h2>
                 <div class="timeline">
-                    <div class="timeline-item reveal">
-                        <div class="timeline-year">2025 - 2027 (En cours)</div>
-                        <h3 class="timeline-title">BTS SIO Option SISR</h3>
-                        <p class="timeline-sub">Lycée La Martinière Duchère, Lyon 69009</p>
-                        <p class="timeline-desc">
-                            Services Informatiques aux Organisations. Spécialisation en Solutions d'Infrastructure, Systèmes et Réseaux. 
-                            Apprentissage de la virtualisation, de l'administration Active Directory et de la cybersécurité[cite: 2, 11].
-                        </p>
+                    <div class="timeline-item">
+                        <span class="text-sm text-blue-400 font-mono">2025 - 2027</span>
+                        <h3 class="text-lg font-semibold">BTS SIO Option SISR</h3>
+                        <p class="text-sm text-slate-400 italic">La Martinière Duchère, Lyon</p>
+                        <p class="mt-2 text-slate-300">Spécialisation en administration réseaux, déploiement de services serveurs et cybersécurité[cite: 11, 14].</p>
                     </div>
-
-                    <div class="timeline-item reveal">
-                        <div class="timeline-year">2022 - 2025</div>
-                        <h3 class="timeline-title">Baccalauréat Professionnel SN</h3>
-                        <p class="timeline-sub">Systèmes Numériques | Mention Assez Bien</p>
-                        <p class="timeline-desc">
-                            Lycée Marc Seguin, Vénissieux. Acquisition des bases en maintenance électronique, 
-                            câblage réseau et programmation Windows.
-                        </p>
+                    <div class="timeline-item">
+                        <span class="text-sm text-blue-400 font-mono">2022 - 2025</span>
+                        <h3 class="text-lg font-semibold">Bac Pro Systèmes Numériques</h3>
+                        <p class="text-sm text-slate-400 italic">Lycée Marc Seguin | Mention Assez Bien</p>
+                        <p class="mt-2 text-slate-300">Bases de la maintenance informatique et des réseaux IP.</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Section Expériences -->
+            <!-- SKILLS MATRIX -->
             <section>
-                <div class="section-label">Expériences</div>
-                <h2 class="section-title text-2xl">Stages Professionnels</h2>
-                
-                <div class="timeline">
-                    <!-- Stage le plus récent -->
-                    <div class="timeline-item reveal">
-                        <div class="timeline-year">Juin 2024 (4 semaines)</div>
-                        <h3 class="timeline-title">Technicien Systèmes Numériques</h3>
-                        <p class="timeline-sub">GALAXIE SOLUTIONS</p>
-                        <p class="timeline-desc">
-                            Réparation d'objets électroniques et maintenance système de premier niveau[cite: 2].
-                        </p>
+                <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="bg-blue-500 w-2 h-6 inline-block"></span> Compétences SISR
+                </h2>
+                <div class="space-y-4">
+                    <div class="skill-card">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span>Admin Windows Server / AD</span>
+                            <span class="text-blue-400">80%</span>
+                        </div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div>
                     </div>
-
-                    <div class="timeline-item reveal">
-                        <div class="timeline-year">Septembre 2023 (3 semaines)</div>
-                        <h3 class="timeline-title">Développement Système</h3>
-                        <p class="timeline-sub">PROSPEKTOR</p>
-                        <p class="timeline-desc">
-                            Initiation à la programmation sous environnement Windows[cite: 2].
-                        </p>
+                    <div class="skill-card">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span>Réseaux (VLAN, Routage Cisco)</span>
+                            <span class="text-blue-400">70%</span>
+                        </div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 70%"></div></div>
                     </div>
-
-                    <div class="timeline-item reveal">
-                        <div class="timeline-year">Mai 2023</div>
-                        <h3 class="timeline-title">Assistant Test Informatique</h3>
-                        <p class="timeline-sub">TESTIFY</p>
-                        <p class="timeline-desc">
-                            Apprentissage des méthodologies de test logiciel et validation de systèmes[cite: 2].
-                        </p>
+                    <div class="skill-card">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span>Virtualisation (VMware)</span>
+                            <span class="text-blue-400">75%</span>
+                        </div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 75%"></div></div>
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- Section Compétences Techniques -->
-        <div class="mt-20">
-            <div class="section-label">Skills Matrix</div>
-            <h2 class="section-title">Compétences Techniques (Bloc 1)</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="skills-list reveal">
-                    <div class="skill-row">
-                        <div class="skill-header"><span class="skill-name">Administration Active Directory</span><span class="skill-pct">75%</span></div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
-                    </div>
-                    <div class="skill-row">
-                        <div class="skill-header"><span class="skill-name">Virtualisation (VMware / Proxmox)</span><span class="skill-pct">70%</span></div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
-                    </div>
-                    <div class="skill-row">
-                        <div class="skill-header"><span class="skill-name">Routage & VLANs (Cisco)</span><span class="skill-pct">65%</span></div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
-                    </div>
+        <!-- STAGES -->
+        <section class="mt-20">
+            <h2 class="text-xl font-bold mb-8">Expériences Professionnelles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="skill-card">
+                    <h4 class="font-bold text-blue-400 text-sm">GALAXIE SOLUTIONS</h4>
+                    <p class="font-semibold text-white">Technicien Maintenance</p>
+                    <p class="text-xs text-slate-400">4 semaines | Juin 2024</p>
+                    <p class="mt-3 text-sm text-slate-300">Diagnostic et réparation de matériel, configuration système[cite: 2].</p>
                 </div>
-                <div class="skills-list reveal">
-                    <div class="skill-row">
-                        <div class="skill-header"><span class="skill-name">Maintenance Réseaux & Matériel</span><span class="skill-pct">85%</span></div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-                    </div>
-                    <div class="skill-row">
-                        <div class="skill-header"><span class="skill-name">Gestion de Parc (GLPI)</span><span class="skill-pct">60%</span></div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 60%;"></div></div>
-                    </div>
-                    <div class="skill-row">
-                        <div class="skill-header"><span class="skill-name">Sécurité des Systèmes</span><span class="skill-pct">55%</span></div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 55%;"></div></div>
-                    </div>
+                <div class="skill-card">
+                    <h4 class="font-bold text-blue-400 text-sm">PROSPEKTOR</h4>
+                    <p class="font-semibold text-white">Support Informatique</p>
+                    <p class="text-xs text-slate-400">3 semaines | 2023</p>
+                    <p class="mt-3 text-sm text-slate-300">Assistance utilisateur et initiation au développement[cite: 2].</p>
+                </div>
+                <div class="skill-card">
+                    <h4 class="font-bold text-blue-400 text-sm">TESTIFY</h4>
+                    <p class="font-semibold text-white">Assistant QA / Test</p>
+                    <p class="text-xs text-slate-400">3 semaines | 2023</p>
+                    <p class="mt-3 text-sm text-slate-300">Tests logiciels et rédaction de rapports de bugs[cite: 2].</p>
                 </div>
             </div>
-        </div>
-    </main>
+        </section>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Padding pour le menu mobile en bas -->
+    <div class="h-24 md:hidden"></div>
+
 </body>
 </html>

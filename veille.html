@@ -2,44 +2,45 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Veille Technologique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille | M-A. EL ABED</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-black">
+
     <nav class="nav">
-        <div class="nav-brand">SISR<span class="dot">.</span>EXPERT</div>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="parcours.html">Parcours</a>
-            <a href="projets.html">Projets</a>
-            <a href="veille.html" class="active">Veille</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+    <div class="nav-brand font-bold tracking-tighter">M-A<span class="text-blue-500">.</span>ELABED</div>
+    <div class="nav-links">
+        <a href="index.html">🏠 Accueil</a>
+        <a href="parcours.html">🚀 Parcours</a>
+        <a href="projets.html">📂 Projets</a>
+        <a href="veille.html">🔍 Veille</a>
+        <a href="contact.html">📞 Contact</a> 
+    </div>
+</nav>
 
-    <header class="page-header">
-        <h1>Veille Technologique</h1>
-        <p>Sujet : L'évolution de la cybersécurité dans les infrastructures réseaux.</p>
-    </header>
+    <div class="container">
+        <header class="py-10">
+            <span class="text-blue-500 font-mono">/ VEILLE TECHNOLOGIQUE</span>
+            <h1 class="font-bold text-3xl">L'IA en Cybersécurité</h1>
+            <p class="text-slate-500 italic mt-2 text-sm">Outils utilisés : Feedly, Google Alerts, IT-Connect.</p>
+        </header>
 
-    <section class="section">
-        <div class="veille-grid">
-            <div class="veille-card">
-                <div class="veille-icon">🛡️</div>
-                <h3>Zéro Trust Architecture</h3>
-                <p>Étude sur le modèle "Ne jamais faire confiance, toujours vérifier" au sein des réseaux locaux.</p>
-                <span class="veille-tag">Réseau / Sécurité</span>
+        <div class="space-y-6">
+            <div class="skill-card">
+                <span class="text-xs text-blue-500">Dernière mise à jour : Mai 2026</span>
+                <h3 class="text-lg font-bold mt-2">Détection d'intrusion par IA</h3>
+                <p class="text-slate-400 text-sm mt-2">Comment les algorithmes d'apprentissage automatique permettent de repérer les comportements anormaux sur un réseau local avant même l'attaque.</p>
             </div>
-            <div class="veille-card">
-                <div class="veille-icon">🤖</div>
-                <h3>IA & Détection d'Intrusion</h3>
-                <p>Comment l'intelligence artificielle aide à repérer les comportements anormaux sur un serveur.</p>
-                <span class="veille-tag">SISR / IA</span>
+            <div class="skill-card">
+                <span class="text-xs text-blue-500">Articles récents</span>
+                <h3 class="text-lg font-bold mt-2">Les ransomwares de nouvelle génération</h3>
+                <p class="text-slate-400 text-sm mt-2">Étude sur l'automatisation des attaques et les moyens de défense préventifs pour les entreprises.</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="h-24 md:hidden"></div>
 </body>
 </html>

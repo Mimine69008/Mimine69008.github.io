@@ -2,66 +2,59 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mes Projets | SISR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | M-A. EL ABED</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-black">
+
     <nav class="nav">
-        <div class="nav-brand">SISR<span class="dot">.</span>EXPERT</div>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="parcours.html">Parcours</a>
-            <a href="projets.html" class="active">Projets</a>
-            <a href="veille.html">Veille</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+    <div class="nav-brand font-bold tracking-tighter">M-A<span class="text-blue-500">.</span>ELABED</div>
+    <div class="nav-links">
+        <a href="index.html">🏠 Accueil</a>
+        <a href="parcours.html">🚀 Parcours</a>
+        <a href="projets.html">📂 Projets</a>
+        <a href="veille.html">🔍 Veille</a>
+        <a href="contact.html">📞 Contact</a> 
+    </div>
+</nav>
 
-    <header class="page-header">
-        <div class="breadcrumb"><a href="index.html">Accueil</a> / Projets</div>
-        <h1>Réalisations de Stage</h1>
-        <p>Voici les projets et missions réalisés durant mon stage en entreprise.</p>
-    </header>
+    <div class="container">
+        <header class="py-10">
+            <span class="text-blue-500 font-mono">/ PORTFOLIO E4</span>
+            <h1 class="font-bold">Mes Réalisations Professionnelles</h1>
+        </header>
 
-    <section class="section">
-        <div class="cards-grid">
-            <!-- Projet 1 : Maintenance & Réseaux -->
-            <div class="project-card reveal">
-                <div class="card-number">01</div>
-                <h3>Maintenance Réseau & Infrastructure</h3>
-                <p class="card-sub">Maintenance / Brassage / Diagnostic</p>
-                <div class="card-desc">
-                    [Contenu à remplir après le stage : Description des interventions réalisées, matériel utilisé et solutions apportées.]
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="skill-card group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-blue-500 font-mono text-xs">SITUATION PRO #01</span>
+                    <span class="bg-green-500/10 text-green-500 text-[10px] px-2 py-1 rounded">Réalisé</span>
                 </div>
-                <div class="card-tags">
-                    <span class="card-tag">Hardware</span>
-                    <span class="card-tag">Réseau</span>
-                </div>
-                <div class="card-status">
-                    <span class="status-dot pending"></span> En attente du stage
+                <h3 class="text-xl font-bold group-hover:text-blue-500 transition">Gestion de parc avec OCS Inventory</h3>
+                <p class="text-slate-400 text-sm mt-2">Installation et configuration d'un serveur d'inventaire automatisé pour recenser le parc informatique.</p>
+                <div class="flex gap-2 mt-4 text-[10px] font-bold">
+                    <span class="border border-slate-700 px-2 py-1 rounded">LINUX</span>
+                    <span class="border border-slate-700 px-2 py-1 rounded">PHP/MYSQL</span>
                 </div>
             </div>
 
-            <!-- Projet 2 : Systèmes & Droits -->
-            <div class="project-card reveal">
-                <div class="card-number">02</div>
-                <h3>Gestion des Droits & Programmation</h3>
-                <p class="card-sub">Active Directory / Scripting</p>
-                <div class="card-desc">
-                    [Contenu à remplir après le stage : Gestion des utilisateurs, groupes de sécurité et scripts d'automatisation système.]
+            <div class="skill-card group cursor-pointer">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-blue-500 font-mono text-xs">SITUATION PRO #02</span>
+                    <span class="bg-blue-500/10 text-blue-500 text-[10px] px-2 py-1 rounded">En cours</span>
                 </div>
-                <div class="card-tags">
-                    <span class="card-tag">Active Directory</span>
-                    <span class="card-tag">Système</span>
-                </div>
-                <div class="card-status">
-                    <span class="status-dot pending"></span> En attente du stage
+                <h3 class="text-xl font-bold group-hover:text-blue-500 transition">Mise en place d'un domaine Active Directory</h3>
+                <p class="text-slate-400 text-sm mt-2">Création d'une infrastructure avec Windows Server 2022, gestion des GPO et des unités d'organisation.</p>
+                <div class="flex gap-2 mt-4 text-[10px] font-bold">
+                    <span class="border border-slate-700 px-2 py-1 rounded">WIN SERVER</span>
+                    <span class="border border-slate-700 px-2 py-1 rounded">DNS/DHCP</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="h-24 md:hidden"></div>
 </body>
 </html>

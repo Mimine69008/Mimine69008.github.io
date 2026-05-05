@@ -2,54 +2,43 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Contact | ELABED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | M-A. EL ABED</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-black text-white">
+
     <nav class="nav">
-        <div class="nav-brand">SISR<span class="dot">.</span>EXPERT</div>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="parcours.html">Parcours</a>
-            <a href="projets.html">Projets</a>
-            <a href="veille.html">Veille</a>
-            <a href="contact.html" class="active">Contact</a>
+    <div class="nav-brand font-bold tracking-tighter">M-A<span class="text-blue-500">.</span>ELABED</div>
+    <div class="nav-links">
+        <a href="index.html">🏠 Accueil</a>
+        <a href="parcours.html">🚀 Parcours</a>
+        <a href="projets.html">📂 Projets</a>
+        <a href="veille.html">🔍 Veille</a>
+        <a href="contact.html">📞 Contact</a> 
+    </div>
+</nav>
+
+    <div class="container text-center py-20">
+        <h1 class="font-bold">Contactez-moi</h1>
+        <p class="text-slate-400 mb-10">En recherche d'un stage ou d'une collaboration ?</p>
+        
+        <div class="max-w-md mx-auto space-y-6">
+            <a href="mailto:mohamed.el.69008@gmail.com" class="block skill-card hover:border-blue-500">
+                <div class="text-2xl mb-2">✉️</div>
+                <div class="font-bold">Email Professionnel</div>
+                <div class="text-blue-400 text-sm">mohamed.el.69008@gmail.com</div>
+            </a>
+            
+            <a href="CV_ELABED.pdf" class="block skill-card hover:border-blue-500">
+                <div class="text-2xl mb-2">📄</div>
+                <div class="font-bold">Télécharger mon CV</div>
+                <div class="text-slate-400 text-sm">Version PDF - 2026</div>
+            </a>
         </div>
-    </nav>
+    </div>
 
-    <header class="page-header text-center">
-        <h1>Me Contacter</h1>
-        <p>Pour toute information complémentaire ou opportunité professionnelle.</p>
-    </header>
-
-    <section class="section">
-        <div class="contact-grid">
-            <div class="contact-info">
-                <div class="contact-info-item">
-                    <div class="ci-icon">📧</div>
-                    <div>
-                        <p class="ci-label">Email Professionnel</p>
-                        <p class="ci-value"><a href="mailto:moahmed.el.69008@gmail.com">moahmed.el.69008@gmail.com</a></p>
-                    </div>
-                </div>
-                <div class="contact-info-item">
-                    <div class="ci-icon">📍</div>
-                    <div>
-                        <p class="ci-label">Localisation</p>
-                        <p class="ci-value">Lyon 69008, France</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cv-download">
-                <h3>Curriculum Vitae</h3>
-                <p>Consultez mon parcours détaillé et mes certifications techniques.</p>
-                <a href="CV_ELABED.pdf" class="btn-cyber"><span>Télécharger le CV (PDF)</span></a>
-            </div>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+    <div class="h-24 md:hidden"></div>
 </body>
 </html>
