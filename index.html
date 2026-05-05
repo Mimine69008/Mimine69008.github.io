@@ -1,5 +1,62 @@
-<html>
-  <body>
-    <p>HELLO WORLD !</p>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ELABED | Portfolio Cyber</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles"></div>
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <nav class="nav">
+        <div class="nav-brand">SISR<span class="dot">.</span>EXPERT</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="projets.html">Projets</a>
+            <a href="veille.html">Veille</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div>
+                <div class="hero-eyebrow">Étudiant BTS SIO SISR</div>
+                <h1 class="hero-name">MOHAMED-AMINE <span class="highlight">EL ABED</span></h1>
+                <h2 class="hero-title">Infrastructures Réseaux & Cybersécurité</h2>
+                <p class="hero-desc">
+                    Spécialisé dans l'administration système et la sécurisation des infrastructures. 
+                    Actuellement en préparation pour mon stage de fin d'année.
+                </p>
+                <div class="hero-btns">
+                    <a href="projets.html" class="btn-cyber"><span>Voir mes projets</span></a>
+                    <a href="contact.html" class="btn-cyber secondary"><span>Me contacter</span></a>
+                </div>
+            </div>
+
+            <div class="terminal-panel">
+                <div class="terminal-bar">
+                    <div class="term-dot r"></div>
+                    <div class="term-dot y"></div>
+                    <div class="term-dot g"></div>
+                    <span class="terminal-title">bash — profile.sh</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="t-prompt">admin@elabed:~$ <span class="t-cmd">neofetch</span></p>
+                    <p class="t-cyan">SISR: Mohamed-Amine</p>
+                    <p class="t-green">STATUS: En recherche de stage</p>
+                    <p class="t-muted">COMPÉTENCES: Maintenance, AD, Programmation</p>
+                    <p class="t-prompt">admin@elabed:~$ <span class="t-cursor-blink"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>
