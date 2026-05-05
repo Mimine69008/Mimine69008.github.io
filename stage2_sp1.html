@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP1 | Stage 2ème année</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+    <div class="nav-inner">
+        <div class="brand">M-A<span>.</span>EL ABED</div>
+        <nav class="nav-links">
+            <a href="index.html">A PROPOS</a>
+            <a href="ap1.html">AP 1ÈRE ANNÉE</a>
+            <a href="ap2.html">AP 2ÈME ANNÉE</a>
+            <a href="stage1.html">STAGE 1ÈRE ANNÉE</a>
+            <a href="stage2.html" class="active">STAGE 2ÈME ANNÉE</a>
+            <a href="veille.html">VEILLE</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container section">
+
+    <a href="stage2.html" class="btn-ghost" style="margin-bottom:2rem;">← Retour au stage</a>
+
+    <header class="section-header">
+        <div class="section-kicker">SP1</div>
+        <h1 class="section-title">Situation Professionnelle 1</h1>
+        <p class="section-subtitle">Mise en place d’un serveur Linux et sécurisation SSH.</p>
+    </header>
+
+    <section class="card-grid">
+
+        <article class="card">
+            <h2 class="card-title">Contexte</h2>
+            <p>
+                L’entreprise souhaitait déployer un nouveau serveur Linux destiné à héberger un service interne.
+                Le serveur devait être sécurisé, accessible uniquement par SSH, et intégré à la supervision.
+                J’ai été chargé de l’installation, du durcissement et de la configuration du serveur.
+            </p>
+        </article>
+
+        <article class="card">
+            <h2 class="card-title">Objectifs</h2>
+            <ul>
+                <li>Installer un serveur Linux (Debian/Ubuntu)</li>
+                <li>Sécuriser l’accès SSH</li>
+                <li>Configurer le pare-feu (UFW)</li>
+                <li>Mettre en place un utilisateur administrateur</li>
+                <li>Installer les mises à jour et paquets nécessaires</li>
+                <li>Intégrer le serveur à l’outil de supervision</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2 class="card-title">Travail réalisé</h2>
+            <ul>
+                <li>Installation du système Linux + configuration réseau</li>
+                <li>Création d’un utilisateur admin avec sudo sécurisé</li>
+                <li>Configuration SSH :
+                    <ul>
+                        <li>Désactivation du login root</li>
+                        <li>Changement du port SSH</li>
+                        <li>Authentification par clé SSH</li>
+                    </ul>
+                </li>
+                <li>Configuration du pare-feu UFW (SSH, HTTP, supervision)</li>
+                <li>Installation des outils : fail2ban, htop, net-tools</li>
+                <li>Ajout du serveur dans Zabbix (agent + monitoring)</li>
+                <li>Tests de sécurité et validation avec l’administrateur</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2 class="card-title">Compétences validées</h2>
+            <ul>
+                <li>Administration Linux</li>
+                <li>Sécurisation SSH</li>
+                <li>Gestion des utilisateurs et permissions</li>
+                <li>Configuration réseau et firewall</li>
+                <li>Supervision Zabbix</li>
+                <li>Documentation technique</li>
+            </ul>
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    © 2025 • Mohamed-Amine EL ABED • SP1
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP1 | Stage 1ère année</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+    <div class="nav-inner">
+        <div class="brand">M-A<span>.</span>EL ABED</div>
+        <nav class="nav-links">
+            <a href="index.html">A PROPOS</a>
+            <a href="ap1.html">AP 1ÈRE ANNÉE</a>
+            <a href="ap2.html">AP 2ÈME ANNÉE</a>
+            <a href="stage1.html" class="active">STAGE 1ÈRE ANNÉE</a>
+            <a href="stage2.html">STAGE 2ÈME ANNÉE</a>
+            <a href="veille.html">VEILLE</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container section">
+
+    <a href="stage1.html" class="btn-ghost" style="margin-bottom:2rem;">← Retour au stage</a>
+
+    <header class="section-header">
+        <div class="section-kicker">SP1</div>
+        <h1 class="section-title">Situation Professionnelle 1</h1>
+        <p class="section-subtitle">Configuration d’un switch Cisco et segmentation réseau.</p>
+    </header>
+
+    <section class="card-grid">
+
+        <article class="card">
+            <h2 class="card-title">Contexte</h2>
+            <p>
+                L’entreprise souhaitait isoler les services Ressources Humaines et Comptabilité afin 
+                d’améliorer la sécurité et de limiter les risques d’accès non autorisés.  
+                J’ai été chargé de mettre en place une segmentation réseau basée sur des VLAN.
+            </p>
+        </article>
+
+        <article class="card">
+            <h2 class="card-title">Objectifs</h2>
+            <ul>
+                <li>Créer des VLAN dédiés pour chaque service</li>
+                <li>Configurer les ports des switchs en mode access</li>
+                <li>Configurer un trunk entre les switchs</li>
+                <li>Assurer la communication inter-VLAN via le routeur</li>
+                <li>Tester et valider la configuration</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2 class="card-title">Travail réalisé</h2>
+            <ul>
+                <li>Création du VLAN 10 (RH) et VLAN 20 (Comptabilité)</li>
+                <li>Configuration des ports en access selon le service</li>
+                <li>Configuration du port trunk pour transporter les VLAN</li>
+                <li>Configuration du routage inter-VLAN sur le routeur</li>
+                <li>Tests de connectivité (ping, traceroute)</li>
+                <li>Documentation complète de la configuration</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2 class="card-title">Compétences validées</h2>
+            <ul>
+                <li>Segmentation réseau (VLAN)</li>
+                <li>Configuration Cisco IOS</li>
+                <li>Adressage IP et routage</li>
+                <li>Diagnostic réseau</li>
+                <li>Rédaction de documentation technique</li>
+            </ul>
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    © 2025 • Mohamed-Amine EL ABED • SP1
+</footer>
+
+</body>
+</html>

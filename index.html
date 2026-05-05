@@ -3,55 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M-A. EL ABED | Portfolio SISR</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio | Mohamed‑Amine EL ABED</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-black text-white">
+<body>
 
-   <nav class="nav">
-    <div class="nav-brand font-bold tracking-tighter">M-A<span class="text-blue-500">.</span>ELABED</div>
-    <div class="nav-links">
-        <a href="index.html">🏠 Accueil</a>
-        <a href="parcours.html">🚀 Parcours</a>
-        <a href="projets.html">📂 Projets</a>
-        <a href="veille.html">🔍 Veille</a>
-        <a href="contact.html">📞 Contact</a> 
+<header class="nav">
+    <div class="nav-inner">
+        <div class="brand">M-A<span>.</span>EL ABED</div>
+        <nav class="nav-links">
+            <a href="index.html" class="active">A PROPOS</a>
+            <a href="ap1.html">AP 1ÈRE ANNÉE</a>
+            <a href="ap2.html">AP 2ÈME ANNÉE</a>
+            <a href="stage1.html">STAGE 1ÈRE ANNÉE</a>
+            <a href="stage2.html">STAGE 2ÈME ANNÉE</a>
+            <a href="veille.html">VEILLE</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
     </div>
-</nav>
+</header>
 
-    <div class="container min-h-[80vh] flex flex-col justify-center">
-        <header class="space-y-4">
-            <span class="text-blue-500 font-mono tracking-widest uppercase text-sm">Expertise Infrastructures & Réseaux</span>
-            <h1 class="font-black leading-none">MOHAMED-AMINE<br><span class="text-slate-500">EL ABED</span></h1>
-            <p class="text-slate-400 text-lg max-w-xl">Étudiant en BTS SIO option SISR. Passionné par l'administration système, la cybersécurité et le déploiement d'architectures réseau sécurisées.</p>
-            
-            <div class="flex flex-wrap gap-4 pt-6">
-                <a href="projets.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold transition">Découvrir mes projets</a>
-                <a href="contact.html" class="border border-slate-700 hover:border-blue-500 px-8 py-3 rounded-full font-bold transition">Me contacter</a>
-            </div>
-        </header>
+<main class="container section">
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20">
-            <div class="skill-card text-center">
-                <div class="text-blue-500 mb-2 font-bold">RÉSEAU</div>
-                <div class="text-xs text-slate-500">Cisco, VLAN, Routage</div>
-            </div>
-            <div class="skill-card text-center">
-                <div class="text-blue-500 mb-2 font-bold">SYSTEME</div>
-                <div class="text-xs text-slate-500">Windows Server, AD, Linux</div>
-            </div>
-            <div class="skill-card text-center">
-                <div class="text-blue-500 mb-2 font-bold">CLOUD</div>
-                <div class="text-xs text-slate-500">Virtualisation, VMware</div>
-            </div>
-            <div class="skill-card text-center">
-                <div class="text-blue-500 mb-2 font-bold">CYBER</div>
-                <div class="text-xs text-slate-500">Sécurisation, VPN</div>
-            </div>
-        </div>
-    </div>
+    <header class="section-header">
+        <div class="section-kicker">Bienvenue</div>
+        <h1 class="section-title">Mohamed‑Amine EL ABED</h1>
+        <p class="section-subtitle">
+            Étudiant en BTS SIO option SISR — Administration systèmes & réseaux, cybersécurité, virtualisation.
+        </p>
+    </header>
 
-    <div class="h-24 md:hidden"></div>
+    <section class="card-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+        <article class="card">
+            <h2 class="card-title">Compétences</h2>
+            <ul>
+                <li>Administration Windows Server</li>
+                <li>Active Directory, GPO</li>
+                <li>Réseaux Cisco (VLAN, routage)</li>
+                <li>Linux (SSH, firewall, services)</li>
+                <li>Virtualisation (VMware, VirtualBox)</li>
+                <li>Cybersécurité & supervision</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2 class="card-title">Objectifs</h2>
+            <ul>
+                <li>Obtenir le BTS SIO SISR</li>
+                <li>Développer mes compétences en administration réseau</li>
+                <li>Me spécialiser en cybersécurité</li>
+                <li>Intégrer une équipe IT professionnelle</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2 class="card-title">Téléchargements</h2>
+            <p>Accédez à mes documents :</p>
+            <a href="CV_ELABED.pdf" download class="btn-primary">Télécharger mon CV</a>
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    © 2025 • Mohamed-Amine EL ABED • Portfolio BTS SIO SISR
+</footer>
+
 </body>
 </html>

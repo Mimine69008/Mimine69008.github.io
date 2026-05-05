@@ -3,42 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | M-A. EL ABED</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact | M-A EL ABED</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("PUBLIC_KEY_ICI"); 
+        })();
+    </script>
 </head>
-<body class="bg-black text-white">
+<body>
 
-    <nav class="nav">
-    <div class="nav-brand font-bold tracking-tighter">M-A<span class="text-blue-500">.</span>ELABED</div>
-    <div class="nav-links">
-        <a href="index.html">🏠 Accueil</a>
-        <a href="parcours.html">🚀 Parcours</a>
-        <a href="projets.html">📂 Projets</a>
-        <a href="veille.html">🔍 Veille</a>
-        <a href="contact.html">📞 Contact</a> 
+<header class="nav">
+    <div class="nav-inner">
+        <div class="brand">M-A<span>.</span>EL ABED</div>
+        <nav class="nav-links">
+            <a href="index.html">A PROPOS</a>
+            <a href="ap1.html">AP 1ÈRE ANNÉE</a>
+            <a href="ap2.html">AP 2ÈME ANNÉE</a>
+            <a href="stage1.html">STAGE 1ÈRE ANNÉE</a>
+            <a href="stage2.html">STAGE 2ÈME ANNÉE</a>
+            <a href="veille.html">VEILLE</a>
+            <a href="contact.html" class="active">CONTACT</a>
+        </nav>
     </div>
-</nav>
+</header>
 
-    <div class="container text-center py-20">
-        <h1 class="font-bold">Contactez-moi</h1>
-        <p class="text-slate-400 mb-10">En recherche d'un stage ou d'une collaboration ?</p>
-        
-        <div class="max-w-md mx-auto space-y-6">
-            <a href="mailto:mohamed.el.69008@gmail.com" class="block skill-card hover:border-blue-500">
-                <div class="text-2xl mb-2">✉️</div>
-                <div class="font-bold">Email Professionnel</div>
-                <div class="text-blue-400 text-sm">mohamed.el.69008@gmail.com</div>
-            </a>
-            
-            <a href="CV_ELABED.pdf" class="block skill-card hover:border-blue-500">
-                <div class="text-2xl mb-2">📄</div>
-                <div class="font-bold">Télécharger mon CV</div>
-                <div class="text-slate-400 text-sm">Version PDF - 2026</div>
-            </a>
-        </div>
-    </div>
+<main class="container section">
 
-    <div class="h-24 md:hidden"></div>
+    <a href="index.html" class="btn-ghost" style="margin-bottom: 2rem; display:inline-block;">
+        ← Retour à l'accueil
+    </a>
+
+    <header class="section-header">
+        <div class="section-kicker">Contact</div>
+        <h1 class="section-title">Me contacter</h1>
+        <p class="section-subtitle">
+            Pour toute demande, information ou opportunité professionnelle.
+        </p>
+    </header>
+
+    <section class="card-grid" style="grid-template-columns: 1.2fr 1fr;">
+
+        <!-- INFORMATIONS -->
+        <article class="card">
+            <h2 class="card-title">Informations</h2>
+            <ul>
+                <li><strong>Nom :</strong> Mohamed-Amine EL ABED</li>
+                <li><strong>Formation :</strong> BTS SIO – SISR</li>
+                <li><strong>Email :</strong> mohamed.el.69008@gmail.com</li>
+                <li><strong>Localisation :</strong> Rhone-Alpes</li>
+            </ul>
+
+            <div style="margin-top: 1.5rem;">
+                <a href="CV_ELABED.pdf" download class="btn-primary">
+                    Télécharger mon CV
+                </a>
+            </div>
+        </article>
+
+        <!-- FORMULAIRE -->
+        <article class="card">
+            <h2 class="card-title">Formulaire de contact</h2>
+
+            <form id="contact-form">
+                <label class="form-label">Nom</label>
+                <input type="text" name="from_name" class="form-input" required>
+
+                <label class="form-label">Email</label>
+                <input type="email" name="reply_to" class="form-input" required>
+
+                <label class="form-label">Message</label>
+                <textarea name="message" rows="4" class="form-input" required></textarea>
+
+                <button type="submit" class="btn-primary" style="margin-top: 1rem;">
+                    Envoyer
+                </button>
+
+                <p id="status" style="margin-top: 0.5rem; font-size: 0.8rem;"></p>
+            </form>
+        </article>
+
+    </section>
+</main>
+
+<footer class="footer">
+    © 2025 • Mohamed-Amine EL ABED • Contact
+</footer>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm("SERVICE_ID_ICI", "TEMPLATE_ID_ICI", this)
+        .then(() => {
+            document.getElementById("status").innerHTML = "Message envoyé avec succès ✔️";
+            document.getElementById("status").style.color = "#22c55e";
+            this.reset();
+        }, (error) => {
+            document.getElementById("status").innerHTML = "Erreur lors de l'envoi ❌";
+            document.getElementById("status").style.color = "#ef4444";
+        });
+});
+</script>
+
 </body>
 </html>
