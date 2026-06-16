@@ -6,6 +6,8 @@
     <title>AP 1ère année | M-A EL ABED</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Correction immédiate du contraste exigée par le référentiel */
+        .section-subtitle { color: #ffffff !important; font-weight: 500; font-size: 1.1rem; max-width: 800px; margin: 0 auto; }
         .card { background-color: #ffffff !important; border: 1px solid #cccccc !important; }
         .card p { color: #111111 !important; font-size: 1rem !important; line-height: 1.6 !important; }
         .card-title { color: #0056b3 !important; font-weight: bold; }
@@ -28,35 +30,36 @@
     </div>
 </header>
 
-<main class="container section">
+<main class="container section" style="text-align: center;">
 
     <header class="section-header">
-        <div class="section-kicker">AP 1ère année</div>
-        <h1 class="section-title">Ateliers Professionnels — 1ère année</h1>
-        <p class="section-subtitle" style="color: #111111 !important;">
+        <div class="section-kicker" style="color: #3b82f6; font-weight: bold; letter-spacing: 1px;">AP 1ère année</div>
+        <h1 class="section-title" style="margin-bottom: 1rem;">Ateliers Professionnels — 1ère année</h1>
+        <!-- Le texte ci-dessous est maintenant blanc et parfaitement lisible sur le fond noir -->
+        <p class="section-subtitle">
             Découvrez les projets de travaux pratiques et ateliers professionnels réalisés en environnement de laboratoire au cours de ma première année de formation.
         </p>
     </header>
 
-    <section class="card-grid" style="grid-template-columns: repeat(2, 1fr);">
+    <section class="card-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 3rem; text-align: left;">
 
         <article class="card">
             <h2 class="card-title">AP — Déploiement & Intégration Windows</h2>
             <p>Maquettage, installation pas à pas d'un système client Microsoft Windows, configuration initiale des services réseaux et jonction à un contrôleur de domaine centralisé.</p>
-            <a href="ap1_windows.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">En savoir plus →</a>
+            <a href="ap1_windows.html" class="btn-primary" style="margin-top: 1.5rem; display: inline-block;">En savoir plus →</a>
         </article>
 
         <article class="card">
             <h2 class="card-title">AP — Commutation Réseau local & VLANs</h2>
             <p>Conception d'une topologie réseau locale, configuration matérielle de commutateurs, mise en place d'une segmentation par VLANs et validation de l'interconnectivité.</p>
-            <a href="ap1_reseau.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">En savoir plus →</a>
+            <a href="ap1_reseau.html" class="btn-primary" style="margin-top: 1.5rem; display: inline-block;">En savoir plus →</a>
         </article>
 
     </section>
 
 </main>
 
-<footer class="footer">
+<footer class="footer" style="margin-top: 5rem;">
     © 2026 • Mohamed-Amine EL ABED • AP 1ère année
 </footer>
 
