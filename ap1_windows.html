@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre SP | AP 1ère année</title>
+    <title>AP Intégration Windows | AP 1ère année</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card { background-color: #ffffff !important; border: 1px solid #cccccc !important; }
+        .card p, .card ul li { color: #111111 !important; font-size: 1rem !important; line-height: 1.6 !important; }
+        .card-title { color: #0056b3 !important; font-weight: bold; }
+        .card ul { padding-left: 1.2rem; }
+    </style>
 </head>
 <body>
 
@@ -25,11 +31,11 @@
 
 <main class="container section">
 
-    <a href="ap1.html" class="btn-ghost" style="margin-bottom:2rem;">← Retour aux AP</a>
+    <a href="ap1.html" class="btn-ghost" style="margin-bottom:2rem; display: inline-block;">← Retour aux AP</a>
 
     <header class="section-header">
         <div class="section-kicker">Situation Professionnelle</div>
-        <h1 class="section-title">Titre de la Situation Professionnelle</h1>
+        <h1 class="section-title">Déploiement de Postes Clients Windows & Jonction AD</h1>
         <p class="section-subtitle">AP — 1ère année BTS SIO SISR</p>
     </header>
 
@@ -38,65 +44,49 @@
         <article class="card">
             <h2 class="card-title">Contexte</h2>
             <p>
-                Décris ici le contexte : environnement, lieu, matériel, durée, rôle, équipe, etc.
+                Dans un environnement de laboratoire virtualisé, j'ai simulé le rôle d'un technicien de support chargé de préparer une machine cliente vierge destinée à rejoindre l'infrastructure réseau administrée par un serveur de domaine de l'entreprise.
             </p>
         </article>
 
         <article class="card">
             <h2 class="card-title">Besoin / Objectif</h2>
             <p>
-                Explique clairement le besoin, la problématique ou l’objectif de la mission.
-                C’est la partie la plus importante : pourquoi cette SP existe ?
+                Le but était d'installer de manière conforme un système d'exploitation Windows 10/11 Pro, de configurer ses paramètres réseau de base de façon statique, et d'assurer son intégration sécurisée au sein d'un domaine Windows Server préexistant pour permettre une gestion centralisée.
             </p>
         </article>
 
         <article class="card">
             <h2 class="card-title">Environnement technologique</h2>
             <ul>
-                <li>Matériel utilisé</li>
-                <li>Logiciels / OS</li>
-                <li>Outils réseau</li>
-                <li>Machines virtuelles</li>
-                <li>Technologies spécifiques</li>
+                <li>Hyperviseur de virtualisation : Oracle VM VirtualBox / VMware Workstation</li>
+                <li>Système Client : Windows 10 / Windows 11 Professionnel</li>
+                <li>Système Serveur : Windows Server (Rôle AD DS & DNS installé)</li>
+                <li>Protocoles de base : TCP/IPv4, DNS d'infrastructure</li>
             </ul>
         </article>
 
         <article class="card">
             <h2 class="card-title">Réalisation / Démarche</h2>
-            <p>
-                Décris étape par étape ce que tu as fait dans cette SP.
-            </p>
             <ul>
-                <li>Étape 1</li>
-                <li>Étape 2</li>
-                <li>Étape 3</li>
-                <li>Tests et validation</li>
+                <li><strong>Étape 1 :</strong> Création de la machine virtuelle, allocation des ressources et installation complète de l'OS client Windows.</li>
+                <li><strong>Étape 2 :</strong> Configuration des paramètres de la carte réseau virtuelle (attribution IP fixe et pointage DNS obligatoire vers l'IP du contrôleur de domaine).</li>
+                <li><strong>Étape 3 :</strong> Modification des propriétés système de la machine pour modifier le groupe de travail par défaut et intégrer le nom de domaine de l'organisation.</li>
+                <li><strong>Tests et validation :</strong> Authentification réussie à l'aide d'un compte utilisateur créé sur l'Active Directory et vérification de la création de l'objet ordinateur dans l'inventaire du serveur.</li>
             </ul>
         </article>
 
         <article class="card">
             <h2 class="card-title">Bilan / Conclusion</h2>
             <p>
-                Résume ce que tu as appris, les difficultés rencontrées, ce qu’il reste à améliorer.
+                Cet exercice a consolidé ma compréhension du fonctionnement de la résolution de noms (DNS) dans un environnement Microsoft Microsoft, élément indispensable pour qu'une jonction de domaine réussisse. L'atelier s'est déroulé sans encombre majeure grâce au respect rigoureux de l'adressage IP défini.
             </p>
-        </article>
-
-        <article class="card">
-            <h2 class="card-title">Productions associées</h2>
-            <ul>
-                <li><a href="#" class="btn-primary">Documentation technique</a></li>
-                <li><a href="#" class="btn-primary">Schéma réseau</a></li>
-                <li><a href="#" class="btn-primary">Captures d’écran</a></li>
-            </ul>
         </article>
 
         <article class="card">
             <h2 class="card-title">Compétences du référentiel</h2>
             <ul>
-                <li>A1.1.1 — Analyse du besoin</li>
-                <li>A1.2.1 — Installation poste client</li>
-                <li>A2.3.1 — Administration réseau</li>
-                <li>A3.2.1 — Supervision</li>
+                <li>B1.2 — Option SISR : Traitement des demandes concernant les applicatifs et services système</li>
+                <li>B1.4 — Option SISR : Administration des éléments de l'infrastructure système</li>
             </ul>
         </article>
 
@@ -105,7 +95,7 @@
 </main>
 
 <footer class="footer">
-    © 2025 • Mohamed-Amine EL ABED • AP 1ère année
+    © 2026 • Mohamed-Amine EL ABED • AP 1ère année
 </footer>
 
 </body>
