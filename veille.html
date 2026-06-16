@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veille technologique | M-A EL ABED</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card { background-color: #ffffff !important; border: 1px solid #cccccc !important; }
+        .card p { color: #111111 !important; font-size: 1rem !important; line-height: 1.6 !important; }
+        .card-title { color: #0056b3 !important; font-weight: bold; }
+    </style>
 </head>
 <body>
 
@@ -23,59 +28,34 @@
     </div>
 </header>
 
-<main class="container section">
+<main class="container section" style="text-align:center;">
+
+    <a href="index.html" class="btn-ghost" style="margin-bottom: 2rem; display:inline-block;">
+        ← Retour à l'accueil
+    </a>
 
     <header class="section-header">
         <div class="section-kicker">Veille</div>
         <h1 class="section-title">Veille technologique</h1>
         <p class="section-subtitle">
-            Suivi de l’actualité en cybersécurité, réseaux et systèmes.
+            Les travaux de recherche et la démarche de veille technologique seront présentés en 2ème année.<br>
+            <span style="color:#3b82f6; font-weight:600;">Section en cours de préparation…</span>
         </p>
     </header>
 
-    <section class="card-grid">
-
+    <section class="card-grid" style="grid-template-columns: repeat(1, 1fr); max-width: 600px; margin: 3rem auto 0 auto;">
         <article class="card">
-            <h2 class="card-title">Sécurisation des VPN</h2>
-            <p>
-                Analyse des nouvelles méthodes d’attaque sur les VPN, importance du MFA,
-                chiffrement renforcé, et bonnes pratiques pour les entreprises.
-            </p>
-            <ul>
-                <li>Protocoles : OpenVPN, WireGuard</li>
-                <li>Attaques MITM</li>
-                <li>Importance du Zero Trust</li>
-            </ul>
+            <h2 class="card-title">Contenu en construction</h2>
+            <p>La démarche de veille informationnelle et technologique (outils de flux RSS, thématiques de cybersécurité, etc.) sera finalisée et documentée au cours de la deuxième année de formation.</p>
+            <span class="card-tag" style="background: #e2e8f0; color: #4a5568; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold;">Prochainement</span>
         </article>
-
-        <article class="card">
-            <h2 class="card-title">Durcissement Windows & Linux</h2>
-            <p>
-                Réduction de la surface d’attaque sur les systèmes d’exploitation :
-                désactivation des services inutiles, gestion des droits, audit de sécurité.
-            </p>
-            <ul>
-                <li>GPO avancées</li>
-                <li>Hardening Linux (SSH, firewall, sudo)</li>
-                <li>Gestion des journaux</li>
-            </ul>
-        </article>
-
-        <article class="card">
-            <h2 class="card-title">Supervision & Monitoring</h2>
-            <p>
-                Mise en place d’outils de supervision pour détecter les incidents réseau
-                et systèmes avant qu’ils n’impactent les utilisateurs.
-            </p>
-            <ul>
-                <li>Outils : Zabbix, Grafana, Centreon</li>
-                <li>Alerting intelligent</li>
-                <li>Analyse des logs</li>
-            </ul>
-        </article>
-
     </section>
 
 </main>
 
 <footer class="footer">
+    © 2026 • Mohamed-Amine EL ABED • Veille Technologique
+</footer>
+
+</body>
+</html>
