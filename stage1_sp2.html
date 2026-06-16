@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SP2 | Stage 1ère année</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card { background-color: #ffffff !important; border: 1px solid #cccccc !important; }
+        .card p, .card ul li { color: #111111 !important; font-size: 1rem !important; line-height: 1.6 !important; }
+        .card-title { color: #0056b3 !important; font-weight: bold; }
+        .card ul { padding-left: 1.2rem; }
+    </style>
 </head>
 <body>
 
@@ -25,61 +31,55 @@
 
 <main class="container section">
 
-    <a href="stage1.html" class="btn-ghost" style="margin-bottom:2rem;">← Retour au stage</a>
+    <a href="stage1.html" class="btn-ghost" style="margin-bottom:2rem; display: inline-block;">← Retour au stage</a>
 
     <header class="section-header">
         <div class="section-kicker">SP2</div>
         <h1 class="section-title">Situation Professionnelle 2</h1>
-        <p class="section-subtitle">Déploiement d’un poste Windows et intégration au domaine.</p>
+        <p class="section-subtitle">Déploiement de postes de travail et intégration au domaine Windows Server.</p>
     </header>
 
     <section class="card-grid">
 
         <article class="card">
-            <h2 class="card-title">Contexte</h2>
+            <h2 class="card-title">Contexte & Besoin</h2>
             <p>
-                Un nouveau collaborateur arrivait dans l’entreprise et un poste devait être préparé
-                selon les standards du service informatique.  
-                L’objectif était de déployer un poste Windows 10, l’intégrer au domaine Active Directory
-                et appliquer les stratégies de sécurité.
+                Dans le cadre de l'intégration de nouveaux collaborateurs au sein de GALAXY SOLUTIONS, le service informatique devait assurer la préparation et la mise à disposition de postes clients fiables. Il s'agissait d'un besoin récurrent de l'organisation. L'objectif était de déployer un système d'exploitation conforme, d'appliquer les politiques de sécurité logiques centralisées de l'entreprise et de s'assurer du fonctionnement direct des outils métiers.
             </p>
         </article>
 
         <article class="card">
-            <h2 class="card-title">Objectifs</h2>
+            <h2 class="card-title">Environnement Technologique</h2>
             <ul>
-                <li>Installer Windows 10 et effectuer les mises à jour</li>
-                <li>Rejoindre le domaine Active Directory</li>
-                <li>Configurer le profil utilisateur</li>
-                <li>Installer les logiciels métiers</li>
-                <li>Appliquer les GPO de sécurité</li>
-                <li>Tester le poste avant livraison</li>
+                <li>Systèmes d'exploitation clients : Windows 10 Pro et Windows 11 Pro</li>
+                <li>Environnement serveur : Windows Server (Rôle Active Directory Domain Services)</li>
+                <li>Outils d'administration réseau : Console ADUC (Utilisateurs et ordinateurs Active Directory)</li>
+                <li>Suite logicielle : Suite bureautique d'entreprise, antivirus centralisé et outils de support à distance</li>
             </ul>
         </article>
 
         <article class="card">
-            <h2 class="card-title">Travail réalisé</h2>
+            <h2 class="card-title">Actions Réalisées</h2>
             <ul>
-                <li>Installation propre de Windows 10</li>
-                <li>Configuration réseau + DNS du domaine</li>
-                <li>Intégration au domaine via AD</li>
-                <li>Installation des logiciels : Office, antivirus, outils internes</li>
-                <li>Application automatique des GPO (mot de passe, restrictions, bureau)</li>
-                <li>Tests finaux : connexion, accès aux partages, imprimantes</li>
-                <li>Remise du poste au collaborateur + documentation</li>
+                <li>Installation propre du système d'exploitation et application des derniers correctifs de sécurité via Windows Update.</li>
+                <li>Configuration des paramètres réseau IP de la machine (adressage et pointage vers le serveur DNS du contrôleur de domaine).</li>
+                <li>Jonction de la machine cliente au domaine de l'organisation en utilisant un compte d'administration délégué.</li>
+                <li>Création du compte utilisateur de l'employé dans l'Unité d'Organisation (OU) appropriée sur le serveur Active Directory.</li>
+                <li>Vérification de l'application automatique des stratégies de groupe (GPO) restrictives (complexité du mot de passe, montage des lecteurs réseau partagés).</li>
             </ul>
         </article>
 
         <article class="card">
-            <h2 class="card-title">Compétences validées</h2>
-            <ul>
-                <li>Déploiement de systèmes Windows</li>
-                <li>Gestion Active Directory</li>
-                <li>Installation et configuration logicielle</li>
-                <li>Application de stratégies GPO</li>
-                <li>Support utilisateur</li>
-                <li>Documentation technique</li>
-            </ul>
+            <h2 class="card-title">Tests, Résultats & Compétences</h2>
+            <p>
+                <strong>Tests effectués :</strong> Ouverture de session (Login) réussie sur la machine cliente avec les identifiants réseau du nouvel utilisateur. Vérification visuelle de la présence des partages de fichiers automatiques et test d'impression réseau sur l'équipement partagé de la structure.
+                <br><br>
+                <strong>Compétences validées :</strong>
+                <br>
+                - Compétence 2 : Traitement des demandes concernant les applicatifs et services système
+                <br>
+                - Compétence 5 : Déploiement d'un service et accompagnement des utilisateurs
+            </p>
         </article>
 
     </section>
@@ -87,7 +87,7 @@
 </main>
 
 <footer class="footer">
-    © 2025 • Mohamed-Amine EL ABED • SP2
+    © 2026 • Mohamed-Amine EL ABED • SP2
 </footer>
 
 </body>
