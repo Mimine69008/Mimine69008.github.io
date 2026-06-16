@@ -6,18 +6,25 @@
     <title>Journal de stage | Stage 1ère année</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Petit ajustement pour s'assurer que les longs textes de 6 lignes restent bien lisibles */
+        /* Optimisation lisibilité Jury : Texte très sombre sur fond blanc */
+        .card {
+            background-color: #ffffff !important;
+            border: 1px solid #cccccc !important;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important;
+        }
         .card p {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            text-align: justify;
-            color: #4a5568;
+            font-size: 1rem !important;
+            line-height: 1.6 !important;
+            text-align: left !important;
+            color: #111111 !important; /* Noir très lisible */
             margin: 0;
         }
         .card-title {
+            color: #0056b3 !important; /* Bleu pro */
             margin-bottom: 1rem;
             border-bottom: 2px solid #edf2f7;
             padding-bottom: 0.5rem;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -45,7 +52,7 @@
     <header class="section-header">
         <div class="section-kicker">Journal</div>
         <h1 class="section-title">Journal de stage</h1>
-        <p class="section-subtitle">Résumé détaillé des tâches réalisées chaque semaine (Minimum 6 lignes).</p>
+        <p class="section-subtitle">Résumé des missions et tâches réalisées au cours des 6 semaines de stage.</p>
     </header>
 
     <section class="card-grid">
@@ -54,7 +61,7 @@
         <article class="card">
             <h2 class="card-title">Semaine 1</h2>
             <p>
-                Lors de cette première semaine de stage au sein de l'organisation, j'ai été accueilli par mon tuteur de stage qui m'a présenté l'ensemble des membres de l'équipe informatique ainsi que les différents services de l'entreprise. J'ai ensuite assisté à une présentation complète de la topologie du réseau interne, incluant l'emplacement des baies de brassage, des serveurs et des différents commutateurs Cisco. Afin de pouvoir travailler efficacement, j'ai procédé à la prise en main de mon environnement de travail numérique local et j'ai configuré mes accès sur les outils d'administration indispensables tels que GLPI pour la gestion des tickets, TeamViewer pour l'assistance à distance, et la console Active Directory. Enfin, j'ai commencé à traiter mes premiers tickets de support utilisateur de niveau 1 concernant des incidents mineurs de connexion réseau et des configurations d'imprimantes partagées.
+                Durant cette première semaine, j'ai découvert l'entreprise, son organisation et l'équipe informatique. Mon tuteur m'a présenté la topologie du réseau interne ainsi que les différents serveurs et équipements de la structure. J'ai configuré mon propre poste de travail et créé mes accès sur les outils d'administration principaux de l'entreprise. J'ai notamment pris en main le logiciel GLPI pour la gestion des tickets d'incident et l'outil Active Directory. Enfin, j'ai traité mes premiers tickets de niveau 1 pour des problèmes de connexion ou des configurations d'imprimantes.
             </p>
         </article>
 
@@ -62,7 +69,7 @@
         <article class="card">
             <h2 class="card-title">Semaine 2</h2>
             <p>
-                Ma deuxième semaine a été principalement axée sur des interventions réseau et le déploiement de nouveaux équipements au sein du parc informatique. Sous la supervision de mon tuteur, j'ai participé activement à la configuration de plusieurs ports sur un switch Cisco afin d'isoler des flux de communication spécifiques. En parallèle, j'ai pris en charge la préparation et le déploiement de plusieurs postes de travail clients sous les systèmes d'exploitation Windows 10 et Windows 11. Pour chaque machine déployée, j'ai veillé à l'intégration correcte de l'équipement au domaine Active Directory de l'entreprise. Enfin, cette semaine m'a permis de me confronter à la résolution d'incidents réseau un peu plus complexes sur le terrain, en diagnostiquant des conflits d'adressage IP liés au serveur DHCP et en configurant des accès sur différents VLANs.
+                Ma deuxième semaine s'est concentrée sur des interventions réseau concrètes et le déploiement de matériel. J'ai participé à la configuration de ports sur un commutateur Cisco sous la supervision de mon tuteur de stage. J'ai également préparé, masterisé et déployé plusieurs nouveaux postes de travail clients sous Windows 10 et Windows 11. J'ai réalisé leur intégration complète dans le domaine Active Directory de la structure. Pour finir, j'ai résolu plusieurs incidents liés à l'attribution automatique des adresses IP par le serveur DHCP.
             </p>
         </article>
 
@@ -70,7 +77,7 @@
         <article class="card">
             <h2 class="card-title">Semaine 3</h2>
             <p>
-                Au cours de la troisième semaine, j'ai concentré mon activité sur la gestion des droits des utilisateurs et la sécurité logique des systèmes d'information. J'ai manipulé régulièrement l'outil Active Directory pour réaliser des tâches d'administration courantes telles que la création de nouveaux comptes d'utilisateurs, la réinitialisation de mots de passe et la gestion des groupes de sécurité. J'ai également collaboré à la mise en œuvre et à l'application de nouvelles stratégies de groupe (GPO) visant à renforcer la politique de complexité des mots de passe et à restreindre l'accès à certains panneaux de configuration. Par la suite, j'ai été chargé de l'installation et de la mise à jour de logiciels métiers sur les postes des collaborateurs, tout en continuant à assurer le support utilisateur de niveau 1 et 2 en répondant aux sollicitations directes.
+                Au cours de la troisième semaine, j'ai géré les comptes des utilisateurs et les droits d'accès au niveau logique. J'ai utilisé la console Active Directory pour créer de nouveaux profils, réinitialiser des mots de passe oubliés et gérer les groupes de sécurité. J'ai également travaillé sur l'application de stratégies de groupe (GPO) pour sécuriser l'usage des postes de travail dans l'entreprise. En parallèle, j'ai installé des logiciels métiers spécifiques pour les collaborateurs et continué à répondre aux demandes de support de niveau 1 et 2.
             </p>
         </article>
 
@@ -78,7 +85,7 @@
         <article class="card">
             <h2 class="card-title">Semaine 4</h2>
             <p>
-                La quatrième semaine de mon immersion en entreprise a été consacrée aux opérations de maintenance préventive et à l'assurance de la continuité de service. J'ai participé aux vérifications hebdomadaires des serveurs de fichiers en contrôlant scrupuleusement les rapports d'exécution des sauvegardes de données afin de m'assurer qu'aucune anomalie n'était survenue. J'ai également effectué des actions de maintenance courante sur les infrastructures physiques du réseau pour optimiser la stabilité des liaisons. Un point important de ma semaine a été la rédaction de documentations techniques détaillant les procédures d'interventions que j'ai réalisées, enrichissant ainsi la base de connaissances interne du helpdesk. Pour finir, j'ai réalisé un premier bilan de mi-parcours constructif avec mon tuteur de stage.
+                La quatrième semaine a été dédiée à la maintenance préventive et à la sauvegarde des données de l'infrastructure. J'ai régulièrement contrôlé les rapports du logiciel de sauvegarde pour vérifier que les copies quotidiennes s'effectuaient sans erreur. J'ai ensuite rédigé des documentations et procédures techniques simples pour le service informatique, afin de lister les étapes de résolution de certains incidents récurrents. Pour clore cette semaine, j'ai effectué un point de situation complet et un bilan de mi-parcours avec mon tuteur.
             </p>
         </article>
 
@@ -86,7 +93,7 @@
         <article class="card">
             <h2 class="card-title">Semaine 5</h2>
             <p>
-                Pendant cette cinquième semaine, j'ai élargi mes compétences en travaillant sur l'évaluation des ressources numériques et la conformité du patrimoine informatique. J'ai procédé à un audit partiel du parc matériel afin de recenser les équipements obsolètes à remplacer et de mettre à jour l'inventaire général sur notre plateforme de gestion. J'ai également étudié les procédures d'attribution des habilitations d'accès aux partages réseaux pour vérifier que le principe du moindre privilège était bien respecté au sein des différents services de la structure. En complément de ces tâches de fond, j'ai maintenu mon engagement auprès du support technique en prenant en charge le traitement de demandes d'assistance applicative, aidant les utilisateurs à résoudre des blocages logiciels bloquant leur activité quotidienne.
+                Pendant cette cinquième semaine, j'ai travaillé sur l'inventaire et la mise à jour du patrimoine informatique de l'organisation. J'ai recensé les machines obsolètes et mis à jour la base de données de notre outil de gestion de parc informatique (GLPI). J'ai aussi analysé les droits d'accès aux dossiers partagés sur le réseau afin de m'assurer que chaque service accède uniquement à ses fichiers. En complément, j'ai assuré le support technique pour débloquer des utilisateurs face à des anomalies logicielles.
             </p>
         </article>
 
@@ -94,7 +101,7 @@
         <article class="card">
             <h2 class="card-title">Semaine 6</h2>
             <p>
-                Cette dernière semaine de stage a été dédiée à la finalisation de mes travaux, à la veille technologique et à la préparation de mes livrables pour l'examen. J'ai mis en place un système d'apprentissage et de veille personnelle axé sur la sécurité des systèmes Windows, en configurant des alertes automatiques sur les vulnérabilités récentes. J'ai également organisé une réunion de clôture avec mon maître de stage pour passer en revue la grille d'évaluation, faire le bilan de mes activités et valider les compétences SIO mobilisées durant ces six semaines. Enfin, j'ai rassemblé l'ensemble des schémas réseau non confidentiels, captures d'écrans anonymisées et notes techniques pris sur le terrain afin de finaliser l'architecture de mon portfolio en ligne et poser les premières bases de mon futur diaporama oral pour le 22 juin.
+                Pour cette dernière semaine de stage, j'ai finalisé mes tâches en cours et préparé mon retour au lycée. J'ai réalisé un bilan complet avec mon tuteur pour valider ma grille d'évaluation et mes fiches de compétences SIO. J'ai mis en place une veille technologique personnelle simple concernant les dernières mises à jour de sécurité des systèmes d'exploitation. Enfin, j'ai rassemblé mes captures d'écran anonymisées et mes schémas réseau pour terminer la structure de mon portfolio et préparer mon diaporama oral.
             </p>
         </article>
 
