@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre SP | AP 1ère année</title>
+    <title>AP Commutation & VLANs | AP 1ère année</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card { background-color: #ffffff !important; border: 1px solid #cccccc !important; }
+        .card p, .card ul li { color: #111111 !important; font-size: 1rem !important; line-height: 1.6 !important; }
+        .card-title { color: #0056b3 !important; font-weight: bold; }
+        .card ul { padding-left: 1.2rem; }
+    </style>
 </head>
 <body>
 
@@ -25,11 +31,11 @@
 
 <main class="container section">
 
-    <a href="ap1.html" class="btn-ghost" style="margin-bottom:2rem;">← Retour aux AP</a>
+    <a href="ap1.html" class="btn-ghost" style="margin-bottom:2rem; display: inline-block;">← Retour aux AP</a>
 
     <header class="section-header">
         <div class="section-kicker">Situation Professionnelle</div>
-        <h1 class="section-title">Titre de la Situation Professionnelle</h1>
+        <h1 class="section-title">Segmentation et Commutation LAN Cisco</h1>
         <p class="section-subtitle">AP — 1ère année BTS SIO SISR</p>
     </header>
 
@@ -38,65 +44,49 @@
         <article class="card">
             <h2 class="card-title">Contexte</h2>
             <p>
-                Décris ici le contexte : environnement, lieu, matériel, durée, rôle, équipe, etc.
+                Dans le cadre des ateliers pratiques de première année, j'ai dû concevoir et simuler l'infrastructure réseau locale d'une PME répartie sur deux services distincts (Administration et Production), nécessitant d'isoler logiquement les communications pour optimiser la bande passante et la sécurité.
             </p>
         </article>
 
         <article class="card">
             <h2 class="card-title">Besoin / Objectif</h2>
             <p>
-                Explique clairement le besoin, la problématique ou l’objectif de la mission.
-                C’est la partie la plus importante : pourquoi cette SP existe ?
+                L'objectif principal était de mettre en œuvre une segmentation réseau à l'aide de réseaux locaux virtuels (VLANs). Il fallait configurer les commutateurs pour bloquer les flux inter-services par défaut et préparer l'infrastructure à l'intégration future d'un routeur pour le routage inter-VLAN.
             </p>
         </article>
 
         <article class="card">
             <h2 class="card-title">Environnement technologique</h2>
             <ul>
-                <li>Matériel utilisé</li>
-                <li>Logiciels / OS</li>
-                <li>Outils réseau</li>
-                <li>Machines virtuelles</li>
-                <li>Technologies spécifiques</li>
+                <li>Simulateur réseau Cisco Packet Tracer / Matériel réel Cisco Catalyst 2960</li>
+                <li>Système d'exploitation Cisco IOS (Interface en ligne de commande - CLI)</li>
+                <li>Câbles Ethernet droits et croisés RJ45, Câble Console DB9/RJ45</li>
+                <li>Protocole d'encapsulation standard IEEE 802.1Q (Trunking)</li>
             </ul>
         </article>
 
         <article class="card">
             <h2 class="card-title">Réalisation / Démarche</h2>
-            <p>
-                Décris étape par étape ce que tu as fait dans cette SP.
-            </p>
             <ul>
-                <li>Étape 1</li>
-                <li>Étape 2</li>
-                <li>Étape 3</li>
-                <li>Tests et validation</li>
+                <li><strong>Étape 1 :</strong> Création des VLANs en CLI (VLAN 10 Admin, VLAN 20 Prod) sur le commutateur principal.</li>
+                <li><strong>Étape 2 :</strong> Affectation des interfaces réseau spécifiques en mode accès (Access Mode) vers les postes clients correspondants.</li>
+                <li><strong>Étape 3 :</strong> Configuration d'une liaison d'agrégation (Mode Trunk) pour permettre le transport de l'ensemble des VLANs vers les autres équipements de l'architecture.</li>
+                <li><strong>Tests et validation :</strong> Vérification de l'étanchéité via des commandes de diagnostic (Ping) : succès au sein d'un même VLAN, échec immédiat entre deux VLANs différents.</li>
             </ul>
         </article>
 
         <article class="card">
             <h2 class="card-title">Bilan / Conclusion</h2>
             <p>
-                Résume ce que tu as appris, les difficultés rencontrées, ce qu’il reste à améliorer.
+                Cet atelier m'a permis de maîtriser les fondamentaux de la syntaxe Cisco IOS ainsi que les concepts de la segmentation de niveau 2. La principale difficulté résidait dans la bonne déclaration du protocole d'encapsulation sur le port Trunk, un point résolu après relecture des schémas d'architecture.
             </p>
-        </article>
-
-        <article class="card">
-            <h2 class="card-title">Productions associées</h2>
-            <ul>
-                <li><a href="#" class="btn-primary">Documentation technique</a></li>
-                <li><a href="#" class="btn-primary">Schéma réseau</a></li>
-                <li><a href="#" class="btn-primary">Captures d’écran</a></li>
-            </ul>
         </article>
 
         <article class="card">
             <h2 class="card-title">Compétences du référentiel</h2>
             <ul>
-                <li>A1.1.1 — Analyse du besoin</li>
-                <li>A1.2.1 — Installation poste client</li>
-                <li>A2.3.1 — Administration réseau</li>
-                <li>A3.2.1 — Supervision</li>
+                <li>B1.1 — Option SISR : Traitement des demandes concernant les infrastructures réseau</li>
+                <li>B1.3 — Option SISR : Administration des éléments de l'infrastructure réseau</li>
             </ul>
         </article>
 
@@ -105,7 +95,7 @@
 </main>
 
 <footer class="footer">
-    © 2025 • Mohamed-Amine EL ABED • AP 1ère année
+    © 2026 • Mohamed-Amine EL ABED • AP 1ère année
 </footer>
 
 </body>
