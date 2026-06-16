@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SP1 | Stage 1ère année</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card { background-color: #ffffff !important; border: 1px solid #cccccc !important; }
+        .card p, .card ul li { color: #111111 !important; font-size: 1rem !important; line-height: 1.6 !important; }
+        .card-title { color: #0056b3 !important; font-weight: bold; }
+        .card ul { padding-left: 1.2rem; }
+    </style>
 </head>
 <body>
 
@@ -25,57 +31,55 @@
 
 <main class="container section">
 
-    <a href="stage1.html" class="btn-ghost" style="margin-bottom:2rem;">← Retour au stage</a>
+    <a href="stage1.html" class="btn-ghost" style="margin-bottom:2rem; display: inline-block;">← Retour au stage</a>
 
     <header class="section-header">
         <div class="section-kicker">SP1</div>
         <h1 class="section-title">Situation Professionnelle 1</h1>
-        <p class="section-subtitle">Configuration d’un switch Cisco et segmentation réseau.</p>
+        <p class="section-subtitle">Configuration d’un switch Cisco et segmentation réseau local.</p>
     </header>
 
     <section class="card-grid">
 
         <article class="card">
-            <h2 class="card-title">Contexte</h2>
+            <h2 class="card-title">Contexte & Besoin</h2>
             <p>
-                L’entreprise souhaitait isoler les services Ressources Humaines et Comptabilité afin 
-                d’améliorer la sécurité et de limiter les risques d’accès non autorisés.  
-                J’ai été chargé de mettre en place une segmentation réseau basée sur des VLAN.
+                Afin de renforcer la sécurité des données internes de l'entreprise GALAXY SOLUTIONS, il est devenu indispensable de séparer physiquement et logiquement les flux réseau des services Ressources Humaines (RH) et Comptabilité. Le besoin était ponctuel : intégrer un nouveau commutateur d'extrémité à l'infrastructure et créer des barrières logicielles étanches (VLAN) pour interdire les interceptions d'informations confidentielles entre ces services.
             </p>
         </article>
 
         <article class="card">
-            <h2 class="card-title">Objectifs</h2>
+            <h2 class="card-title">Environnement Technologique</h2>
             <ul>
-                <li>Créer des VLAN dédiés pour chaque service</li>
-                <li>Configurer les ports des switchs en mode access</li>
-                <li>Configurer un trunk entre les switchs</li>
-                <li>Assurer la communication inter-VLAN via le routeur</li>
-                <li>Tester et valider la configuration</li>
+                <li>Commutateur Cisco Catalyst (gestion en ligne de commande via CLI Cisco IOS)</li>
+                <li>Câblage Ethernet RJ45 de catégorie 6 et liaison console RS232</li>
+                <li>Logiciel d'émulation de terminal PuTTY pour la configuration directe</li>
+                <li>Outils d'analyse et de diagnostic réseau basiques (Ping, Traceroute)</li>
             </ul>
         </article>
 
         <article class="card">
-            <h2 class="card-title">Travail réalisé</h2>
+            <h2 class="card-title">Actions Réalisées</h2>
             <ul>
-                <li>Création du VLAN 10 (RH) et VLAN 20 (Comptabilité)</li>
-                <li>Configuration des ports en access selon le service</li>
-                <li>Configuration du port trunk pour transporter les VLAN</li>
-                <li>Configuration du routage inter-VLAN sur le routeur</li>
-                <li>Tests de connectivité (ping, traceroute)</li>
-                <li>Documentation complète de la configuration</li>
+                <li>Connexion physique en mode console sur l'équipement Cisco pour l'initialisation.</li>
+                <li>Création des entités logiques sur le switch : VLAN 10 (nommé RH) et VLAN 20 (nommé COMPTA).</li>
+                <li>Affectation manuelle des interfaces physiques en mode d'accès (switchport mode access) vers les ports utilisateurs correspondants.</li>
+                <li>Configuration d'une interface d'agrégation (Trunking 802.1Q) sur le port de liaison montante reliant le switch au cœur de réseau.</li>
+                <li>Sécurisation d'accès de base à l'équipement (mots de passe utilisateur et privilège "enable").</li>
             </ul>
         </article>
 
         <article class="card">
-            <h2 class="card-title">Compétences validées</h2>
-            <ul>
-                <li>Segmentation réseau (VLAN)</li>
-                <li>Configuration Cisco IOS</li>
-                <li>Adressage IP et routage</li>
-                <li>Diagnostic réseau</li>
-                <li>Rédaction de documentation technique</li>
-            </ul>
+            <h2 class="card-title">Tests, Résultats & Compétences</h2>
+            <p>
+                <strong>Tests effectués :</strong> Réalisation de requêtes de diagnostics de connectivité (ICMP Ping) depuis une station du VLAN 10 vers une autre station du même VLAN (succès), puis vers une station du VLAN 20 (échec attendu avant routage), validant la bonne étanchéité de la segmentation.
+                <br><br>
+                <strong>Compétences validées :</strong>
+                <br>
+                - Compétence 1 : Exploitation des référentiels, normes et standards (Norme 802.1Q)
+                <br>
+                - Compétence 2 : Traitement des demandes système et réseau
+            </p>
         </article>
 
     </section>
@@ -83,7 +87,7 @@
 </main>
 
 <footer class="footer">
-    © 2025 • Mohamed-Amine EL ABED • SP1
+    © 2026 • Mohamed-Amine EL ABED • SP1
 </footer>
 
 </body>
