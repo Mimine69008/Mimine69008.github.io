@@ -36,7 +36,7 @@
     <header class="section-header">
         <div class="section-kicker">SP1</div>
         <h1 class="section-title">Situation Professionnelle 1</h1>
-        <p class="section-subtitle">Configuration d’un switch Cisco et segmentation réseau local.</p>
+        <p class="section-subtitle">Sécurisation du réseau par segmentation VLAN.</p>
     </header>
 
     <section class="card-grid">
@@ -44,41 +44,51 @@
         <article class="card">
             <h2 class="card-title">Contexte & Besoin</h2>
             <p>
-                Afin de renforcer la sécurité des données internes de l'entreprise GALAXY SOLUTIONS, il est devenu indispensable de séparer physiquement et logiquement les flux réseau des services Ressources Humaines (RH) et Comptabilité. Le besoin était ponctuel : intégrer un nouveau commutateur d'extrémité à l'infrastructure et créer des barrières logicielles étanches (VLAN) pour interdire les interceptions d'informations confidentielles entre ces services.
+                Afin d'améliorer l'organisation et la sécurité du réseau, l'entreprise devait intégrer un nouveau commutateur à son infrastructure existante. L'objectif était de séparer les communications entre différents équipements afin de mieux contrôler les échanges et limiter les accès non autorisés.
             </p>
         </article>
 
         <article class="card">
             <h2 class="card-title">Environnement Technologique</h2>
             <ul>
-                <li>Commutateur Cisco Catalyst (gestion en ligne de commande via CLI Cisco IOS)</li>
-                <li>Câblage Ethernet RJ45 de catégorie 6 et liaison console RS232</li>
-                <li>Logiciel d'émulation de terminal PuTTY pour la configuration directe</li>
-                <li>Outils d'analyse et de diagnostic réseau basiques (Ping, Traceroute)</li>
+                <li>Commutateur Cisco</li>
+                <li>Interface en ligne de commande (CLI)</li>
+                <li>Postes de travail sous Windows</li>
+                <li>Réseau local de l'entreprise</li>
+                <li>Câblage Ethernet</li>
             </ul>
         </article>
 
         <article class="card">
             <h2 class="card-title">Actions Réalisées</h2>
             <ul>
-                <li>Connexion physique en mode console sur l'équipement Cisco pour l'initialisation.</li>
-                <li>Création des entités logiques sur le switch : VLAN 10 (nommé RH) et VLAN 20 (nommé COMPTA).</li>
-                <li>Affectation manuelle des interfaces physiques en mode d'accès (switchport mode access) vers les ports utilisateurs correspondants.</li>
-                <li>Configuration d'une interface d'agrégation (Trunking 802.1Q) sur le port de liaison montante reliant le switch au cœur de réseau.</li>
-                <li>Sécurisation d'accès de base à l'équipement (mots de passe utilisateur et privilège "enable").</li>
+                <li>Connexion au commutateur et réalisation de la configuration de base.</li>
+
+                <li>Création de plusieurs segments logiques afin d'organiser les communications réseau.</li>
+
+                <li>Association des différents ports aux segments créés.</li>
+
+                <li>Configuration de la liaison vers le réseau principal.</li>
+
+                <li>Mise en place d'un accès administrateur sécurisé pour protéger l'équipement.</li>
             </ul>
         </article>
 
         <article class="card">
             <h2 class="card-title">Tests, Résultats & Compétences</h2>
             <p>
-                <strong>Tests effectués :</strong> Réalisation de requêtes de diagnostics de connectivité (ICMP Ping) depuis une station du VLAN 10 vers une autre station du même VLAN (succès), puis vers une station du VLAN 20 (échec attendu avant routage), validant la bonne étanchéité de la segmentation.
-                <br><br>
+                <strong>Tests effectués :</strong>
+                plusieurs vérifications de communication ont été réalisées afin de valider la configuration mise en place. Les équipements appartenant au même segment pouvaient communiquer normalement, tandis que les échanges entre segments différents étaient correctement limités.
+            </p>
+
+            <br>
+
+            <p>
                 <strong>Compétences validées :</strong>
+                <br><br>
+                - Compétence 1 : Gérer le patrimoine informatique.
                 <br>
-                - Compétence 1 : Exploitation des référentiels, normes et standards (Norme 802.1Q)
-                <br>
-                - Compétence 2 : Traitement des demandes système et réseau
+                - Compétence 3 : Mettre à disposition des utilisateurs un service informatique.
             </p>
         </article>
 
